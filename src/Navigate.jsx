@@ -6,16 +6,13 @@ function Navigate(){
             <div className={"container-fluid"}>
                 <ul className={"navbar-nav"}>
                     <li className={"nav-item"}>
-                        <a className={"nav-link"} href={"#"}>Active</a>
+                        <a className={"nav-link"} href={"/main"}>Main</a>
                     </li>
                     <li className={"nav-item"}>
-                        <a className={"nav-link"} href={"#"}>Link</a>
+                        <a className={"nav-link"} href={"/board"}>board</a>
                     </li>
                     <li className={"nav-item"}>
-                        <a className={"nav-link"} href={"#"}>Active</a>
-                    </li>
-                    <li className={"nav-item"}>
-                        <a className={"nav-link"} href={"#"}>Disabled</a>
+                        <a className={"nav-link"} href={"/about"}>About</a>
                     </li>
                 </ul>
             </div>

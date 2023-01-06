@@ -5,33 +5,34 @@ import Header from "./Header";
 import Navigate from "./Navigate";
 import LinkList from "./LinkList";
 import Info from "./Info";
+import {Route,Routes,BrowserRouter} from "react-router-dom";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import NoPage from "./pages/NoPage";
 
 
 function App2(){
     return(
         <div>
             <Header />
-
             <Navigate />
-
-            <div className={"container mt-5"}>
                 <div className={"row"}>
-                    <div className={"col-sm-4"}>
-                        <Info />
-                        <LinkList />
-                    <hr className={"d-sm-none"} />
+                    <div className={"col-sm-3"}>
+                <Info />
                     </div>
-                    <div className="col-sm-8">
-                        <Contents />
+                        <div className={"col-sm-8"}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path={"main"} element={<Contents />} />
+                        <Route path={"board"} element={<Home />} />
+                        <Route path={"about"} element={<Info />} />
+                        <Route path={"*"} element={<NoPage />} />
+                    </Routes>
+                </BrowserRouter>
 
-                        <Contents />
                     </div>
+                </div>
             </div>
-        </div>
-
-            <Footer />
-
-        </div>
             );
 }
 
