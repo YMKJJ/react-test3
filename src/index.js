@@ -6,6 +6,7 @@ import App8 from "./App8";
 import App2 from "./App2";
 import AApp from "./AApp";
 import AApp2 from "./AApp2";
+import App9 from "./App9";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,8 @@ root.render(
   // <React.StrictMode>
   // </React.StrictMode>
   //   <App2 />
-    <AApp2 />
+    //   <App8 />
+<App9 />
 );
 
 // If you want to start measuring performance in your app, pass a function

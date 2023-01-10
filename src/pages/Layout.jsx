@@ -16,6 +16,12 @@ function Layout(props) {
                     <li>
                         <Link to={"/contact"}>Contact</Link>
                     </li>
+                    <li>
+                        <Link to={"/Board"}>Board</Link>
+                    </li>
+                    <li>
+                        <Link to={"/Board2"}>Board2</Link>
+                    </li>
                 </ul>
             </nav>
 

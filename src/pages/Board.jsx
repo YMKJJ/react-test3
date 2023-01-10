@@ -1,12 +1,15 @@
-// board.jsx CreateDt : 2023-01-10
+// Board.jsx CreateDt : 2023-01-10
 import React from "react";
+import {useParams} from "react-router-dom";
 
-function board(props){
-    return(
+function Board(props) {
+    const boardSelect = useParams();
+
+    return (
         <div>
-        
+            <h2> 글번호 : {boardSelect.boardIdx}</h2>
         </div>
     );
 }
 
-export default board;
+export default Board;
